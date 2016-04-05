@@ -46,7 +46,7 @@ Vagrant.configure("2") do |config|
 		mdw_config.vm.provision :shell, :path => "install_lab_data_on_master.sh"
 		mdw_config.vm.provision :shell, :path => "install_gpdb_and_gpcc_on_master.sh"
 		mdw_config.vm.provision :shell, :path => "install_gpdb_on_segments.sh"
-#		mdw_config.vm.provision :shell, :path => "run_system_verification_tests.sh"
+		mdw_config.vm.provision :shell, :path => "run_system_verification_tests.sh"
 		mdw_config.vm.provision :shell, :path => "initialize_gpdb.sh"
 		mdw_config.vm.provision :shell, :path => "initialize_gpcc.sh"
 		mdw_config.vm.provision :shell, :path => "unmount_vagrant.sh"
